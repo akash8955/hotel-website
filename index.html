@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel website</title>
+  <!-- favicon -->
+  <link rel="icon" href="images/logo.png">
+  <!-- for google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- bootstrap css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- swipper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- style css -->
+  <link rel="stylesheet" href="hotel.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+  <!-- navbar section -->
+  <header class="header-wrapper">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="logo" height="35px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered  navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item mt-3 ms-5 mt-lg-0">
+              <a class="main-btn" href="#">Book Now</a>
+            </li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- swipper slidebar section -->
+  <section id="home" class="banner-wrapper p0">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide" style="background-image: url(images/swiper4.jpg);">
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Welcome To Jaipur's Hotel</h1>
+              <p>Our hotel guarantees exceptional quality with luxurious amenities, elegant design, and personalized services. Guests enjoy spacious, well-appointed rooms, fine dining options, spa facilities, and attentive staff. Our prioritize comfort, exclusivity, and attention to detail, delivering an unforgettable experience of excellence.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/swiper2.jpg);">
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Welcome To Jaipur's Hotel</h1>
+              <p>Our hotel guarantees exceptional quality with luxurious amenities, elegant design, and personalized services. Guests enjoy spacious, well-appointed rooms, fine dining options, spa facilities, and attentive staff. Our prioritize comfort, exclusivity, and attention to detail, delivering an unforgettable experience of excellence.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(images/swiper3.jpg);">
+          <div class="slide-caption text-center">
+            <div>
+              <h1>Welcome To Jaipur's Hotel2</h1>
+              <p>Our hotel guarantees exceptional quality with luxurious amenities, elegant design, and personalized services. Guests enjoy spacious, well-appointed rooms, fine dining options, spa facilities, and attentive staff. Our prioritize comfort, exclusivity, and attention to detail, delivering an unforgettable experience of excellence.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container booking-area">
+      <form class="row">
+        <div class="col-lg mb-3 mb-lg-0">
+          <p class="text-center">Select Check-in Date :</p>
+          <input type="date" class="form-control" placeholder="Check-in Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <p class="text-center">Select Check-out Date :</p>
+          <input type="date" class="form-control" placeholder="Check-out Date">
+        </div>
+        <div class="col-lg mb-3 mb-lg-0">
+          <p class="text-center">Select Guests :</p>
+          <select class="form-select">
+            <option selected>Adult</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="col-lg mb-3 mb-lg-0 text-center pt-lg-4">
+          <button type="submit" class="main-btn ">Check Awailability</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="swiper-pagination"></div>
+  </section>
+  <!-- about section -->
+  <section id="about" class="about-wrapper ">
+    <div class="container">
+      <div class="row flex-lg-row flex-column-reverse">
+        <div class="col-lg-6 text-center text-lg-start py-5">
+          <h2>Welcome to <span>Hotel ,<br class="d-none d-lg-block">
+              the haven</span> of your weekend</h2>
+          <p>At our premium hotel, we are committed to offering an exceptional experience that combines luxury, comfort, and personalized service. Each room is elegantly designed with modern amenities, ensuring that every guest enjoys a sophisticated stay. From plush bedding to high-speed Wi-Fi, we provide everything needed for relaxation and convenience. Our fine dining restaurants serve gourmet dishes prepared by world-class chefs, complemented by a selection of premium beverages.</p>
+          <p>Beyond the rooms, our hotel features an exclusive spa, fitness center, and swimming pool to promote well-being and leisure. Whether you're here for business or pleasure, our dedicated staff is always available to meet your every need. Experience the perfect blend of elegance and attentive hospitality in a setting designed to exceed expectations.</p>
+          <a href="#" class="main-btn mt-4">Explore</a>
+        </div>
+        <div class="col-lg-6 mb-4 mg-lg-0 ps-lg-4 text-center py-5">
+          <img src="images/about-img.jpg" alt="img" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- room section -->
+  <section id="rooms" class="rooms-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-4">
+          <h6>What I Can Do For You</h6>
+          <h2><span>Our Favourite Rooms</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-group col-md-4 text-center mb-4 mb-lg-0">
+        <div class="card">
+          <img src="images/room4.jpg" class="card-img-top text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Economy Rooms</h5>
+            <p class="card-text px-5">Our Economy Room offers essential comforts like a cozy bed, free Wi-Fi, and a functional workspace, providing a clean and efficient stay for budget-conscious travelers without compromising on quality and convenience.</p>
+            <button class="main-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-group col-md-4 text-center mb-4 mb-lg-0">
+        <div class="card">
+          <img src="images/room2.jpg" class="card-img-top text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Premium Rooms</h5>
+            <p class="card-text px-5">The Premium Room features spacious design, upgraded furnishings, and modern amenities. Guests enjoy superior bedding, stylish decor, premium toiletries, and scenic views, making it an ideal choice for those seeking both comfort and elegance. </p>
+            <button class="main-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-group col-md-4 text-center mb-4 mb-lg-0">
+        <div class="card">
+          <img src="images/room3.jpg" class="card-img-top text-center" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Luxury Rooms</h5>
+            <p class="card-text px-5">Our Luxury Room provides an opulent experience with lavish interiors, high-end furnishings, and exclusive amenities such as a private jacuzzi, personalized concierge service, and stunning views, delivering a truly extravagant and unforgettable stay.</p>
+            <button class="main-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- service section -->
+  <section id="services" class="services-wrapper mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>We are Here For You</h6>
+          <h2><span>Our awesome Services</span></h2>
+        </div>
+      </div>
+      <div class="row align-item-center service-item-wrap">
+        <div class="col-lg-7 p-lg-0">
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="spa" role="tabpanel">
+              <img src="images/service1.webp" alt="img" class="img-fluid">
+            </div>
+            <div class="tab-pane fade" id="restaurent" role="tabpanel">
+              <img src="images/service2.webp" alt="img" class="img-fluid">
+            </div>
+            <div class="tab-pane fade" id="swimming" role="tabpanel">
+              <img src="images/service3.webp" alt="img" class="img-fluid">
+            </div>
+            <div class="tab-pane fade" id="conference" role="tabpanel">
+              <img src="images/service4.webp" alt="img" class="img-fluid">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-5 position-relative">
+          <div class="service-area">
+            <ul class="nav">
+              <li>
+                <a data-bs-toggle="tab" href="#spa" class="active">
+                  <span class="service-icon">
+                    <img src="images/service-icon1.webp" alt="" class="img-fluid">
+                  </span>
+
+                  <h5>spa, beauty and Health</h5>
+                  <p><span>Spa and Beauty</span> A spa offers relaxation and rejuvenation services, including massages, facials, and beauty treatments, enhancing both physical and mental well-being.</p>
+
+                </a>
+              </li>
+              <li>
+                <a data-bs-toggle="tab" href="#restaurent">
+                  <span class="service-icon">
+                    <img src="images/service-icon2.webp" alt="" class="img-fluid">
+                  </span>
+                  <h5>Restaurent, Taste Of Luxury</h5>
+                  <p><span>Restaurent, Taste Of Luxury</span> Our hotel restaurant offers gourmet dining with a diverse menu, elegant ambiance, and exceptional service for a memorable culinary experience.</p>
+                </a>
+              </li>
+              <li>
+                <a data-bs-toggle="tab" href="#swimming">
+                  <span class="service-icon">
+                    <img src="images/service-icon3.webp" alt="" class="img-fluid">
+                  </span>
+                  <h5>Swimming And Fitness</h5>
+                  <p><span>Swimming And Fitness</span> Swimming is a refreshing exercise that improves cardiovascular health, builds endurance, and offers relaxation, making it ideal for all ages.</p>
+                </a>
+              </li>
+              <li>
+                <a data-bs-toggle="tab" href="#conference">
+                  <span class="service-icon">
+                    <img src="images/service-icon4.webp" alt="" class="img-fluid">
+                  </span>
+                  <h5>Conference, Explore More</h5>
+                  <p><span>Conference, Explore More</span> Our hotel conference facilities offer state-of-the-art technology, spacious meeting rooms, and professional support, perfect for business events or seminars.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="counter mt-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-2">
+            <h1><span id="count1"></span>+</h1>
+            <p>Happy Clients</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-2">
+            <h1><span id="count2"></span>+</h1>
+            <p>New Friendship</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-2">
+            <h1><span id="count3"></span>+</h1>
+            <p>Five Star Rating</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-2">
+            <h1><span id="count4"></span>+</h1>
+            <p>New Members</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- team section -->
+  <section id="team" class="team-wrapper">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center my-4">
+          <h6>What I Can Do For You</h6>
+          <h2><span>Our Special Staff</span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team1.webp" alt="" height="450px" class="rounded-3">
+            <div class="team-detail">
+              <h5>Mr. R.K Singh</h5>
+              <p>General Manager</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team5.webp" alt="" height="450px" class="rounded-3">
+            <div class="team-detail">
+              <h5>Miss Tanvi Patel</h5>
+              <p>Executive Chief</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team3.webp" alt="" height="450px" class="rounded-3">
+            <div class="team-detail">
+              <h5>Mr. Suresh Aggarwal</h5>
+              <p>Management Director</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card p-0 rounded-3">
+            <img src="images/team6.webp" alt="" height="450px" class="rounded-3">
+            <div class="team-detail">
+              <h5>Miss Priya Gupta</h5>
+              <p>Front Office Manager</p>
+              <ul class="social-network">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- gallery section -->
+  <div id="gallery" class="gallery-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center my-4">
+          <h6>Best Picture of Our Hotel</h6>
+          <h2><span>Our Gallery</span></h2>
+        </div>
+      </div>
+      <div class="row g-0">
+        <div class=" col-lg-3 col-md-6 gallery-item">
+          <img src="images/gallery2.jpeg" alt="gallery-img" height="450px" width="100%">
+          <div class="gallery-content"></div>
+        </div>
+        <div class="col-lg-3 col-md-6 gallery-item">
+          <img src="images/gallery3.jpeg" alt="gallery-img" height="450px" width="100%">
+          <div class="gallery-content"></div>
+        </div>
+        <div class=" col-lg-3 col-md-6 gallery-item">
+          <img src="images/gallery4.jpeg" alt="gallery-img" height="450px" width="100%">
+          <div class="gallery-content"></div>
+        </div>
+        <div class=" col-lg-3 col-md-6 gallery-item">
+          <img src="images/gallery5.webp" alt="gallery-img" height="450px" width="100%">
+          <div class="gallery-content"></div>
+        </div>
+        <div class=" col-md-6 gallery-item">
+          <img src="images/gallery6.jpeg" alt="gallery-img" height="250px" width="100%">
+          <div class="gallery-content"></div>
+        </div>
+        <div class=" col-md-6 gallery-item">
+          <img src="images/gallery7.webp" alt="gallery-img" height="250px" width="100%">
+          <div class="gallery-content"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section -->
+  <section id="contact" class="footer-wrapper ">
+    <div class="container py-4 ps-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-4">
+          <h5>Hotel Location</h5>
+          <p class="ps-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium omnis doloribus
+            ipsa optio accusamus libero laboriosam quos.</p>
+          <div class="contact-info">
+            <ul class="list-unstyled">
+              <li><a href="#"><i class="fa-solid fa-house"></i>  No.45 ,Mansarovar ,jaipur</a></li>
+              <li><a href="#"><i class="fa-solid fa-square-phone"></i>  +91-8955826957</a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope"></i>  akash89558@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h5>Important Links </h5>
+          <ul class="link-widget ps-0">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Office</a></li>
+            <li><a href="#">Our Service</a></li>
+            <li><a href="#">Our Partner</a></li>
+            <li><a href="#">Special Offer</a></li>
+            <li><a href="#">Book for Parties</a></li>
+            <li><a href="#">Buy Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4 ">
+          <h5>More Links</h5>
+          <ul class="link-widget ps-0">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Rooms</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Gallery</a></li 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container-fluid">
+    <div class="row footer">
+      <div class="col-sm-12 text-center my-3">
+        <p>Created By Akash  <span>©</span> 2024 All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- swipper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- bootsrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- js main -->
+  <script src="hotel.js"></script>
+
+</body>
+
+</html>
